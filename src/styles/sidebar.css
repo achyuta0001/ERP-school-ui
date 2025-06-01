@@ -1,0 +1,101 @@
+.sidebar {
+  width: 220px;
+  background: #222e3c;
+  color: #fff;
+  height: 100vh;
+  transition: width 0.3s;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+  z-index: 100;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-nav {
+  margin-top: 30px;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-nav li {
+  margin: 20px 0;
+}
+
+.sidebar-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  transition: background 0.2s;
+}
+
+.sidebar-nav a:hover {
+  background: #1b2230;
+  border-radius: 4px;
+}
+
+.sidebar.collapsed .sidebar-nav a {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.sidebar.collapsed .sidebar-nav ul {
+  padding-left: 0;
+}
+
+.sidebar.collapsed .sidebar-nav li {
+  margin: 15px 0;
+}
+
+.sidebar-icon {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-right: 12px;
+  text-align: left;
+}
+
+.enlarged {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.collapsed-nav .sidebar-icon {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.collapsed-nav .sidebar-text {
+  display: none;
+}
+
+.expanded-nav .sidebar-icon {
+  margin-right: 12px;
+  text-align: left;
+}
+
+.expanded-nav .sidebar-text {
+  display: inline;
+  text-align: left;
+}

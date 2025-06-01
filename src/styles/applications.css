@@ -1,0 +1,124 @@
+.applications-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+}
+
+.applications-page h2 {
+  text-align: center;
+  color: #222e3c;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.applications-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.application-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 8px rgba(34,46,60,0.08);
+  padding: 22px 28px;
+  width: 320px;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.application-card:hover {
+  box-shadow: 0 4px 24px rgba(34,46,60,0.16);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.applications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.new-app-btn {
+  background: #222e3c;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.new-app-btn:hover {
+  background: #1b2230;
+}
+
+.application-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #dc3545;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.delete-btn:hover {
+  color: #a71d2a;
+}
+
+.applicant-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #222e3c;
+}
+
+.status-badge {
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.pending {
+  background: #f0ad4e;
+}
+
+.status-badge.approved {
+  background: #28a745;
+}
+
+.status-badge.rejected {
+  background: #dc3545;
+}
+
+.application-details {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
