@@ -30,17 +30,29 @@ const Sidebar = () => {
       {!collapsed && (
         <nav className="sidebar-nav expanded-nav">
           <ul>
-            <li><a href="#dashboard"><span className="sidebar-icon">{icons.dashboard}</span> <span className="sidebar-text enlarged">Dashboard</span></a></li>
-            <li><a href="#students"><span className="sidebar-icon">{icons.students}</span> <span className="sidebar-text enlarged">Students</span></a></li>
-            <li><a href="#teachers"><span className="sidebar-icon">{icons.teachers}</span> <span className="sidebar-text enlarged">Teachers</span></a></li>
-            <li><a href="#classes"><span className="sidebar-icon">{icons.classes}</span> <span className="sidebar-text enlarged">Classes</span></a></li>
+            <li><a href="/dashboard" onClick={e => handleNav(e, "/dashboard")}>
+                <span className="sidebar-icon">{icons.dashboard}</span>
+                <span className="sidebar-text enlarged">Dashboard</span>
+              </a></li>
+            <li><a href="/students" onClick={e => handleNav(e, "/students")}>
+                <span className="sidebar-icon">{icons.students}</span>
+                <span className="sidebar-text enlarged">Students</span>
+              </a></li>
+            <li><a href="/teachers" onClick={e => handleNav(e, "/teachers")}>
+                <span className="sidebar-icon">{icons.teachers}</span>
+                <span className="sidebar-text enlarged">Teachers</span>
+              </a></li>
+            {/*<li><a href="#classes"><span className="sidebar-icon">{icons.classes}</span> <span className="sidebar-text enlarged">Classes</span></a></li>*/}
             <li>
               <a href="/applications" onClick={e => handleNav(e, "/applications")}>
                 <span className="sidebar-icon">{icons.applications}</span>
                 <span className="sidebar-text enlarged">Applications</span>
               </a>
             </li>
-            <li><a href="#settings"><span className="sidebar-icon">{icons.settings}</span> <span className="sidebar-text enlarged">Settings</span></a></li>
+            <li><a href="/settings" onClick={e => handleNav(e, "/settings")}>
+                <span className="sidebar-icon">{icons.settings}</span>
+                <span className="sidebar-text enlarged">Settings</span>
+              </a></li>
           </ul>
         </nav>
       )}
@@ -48,16 +60,29 @@ const Sidebar = () => {
       {collapsed && (
         <nav className="sidebar-nav collapsed-nav">
           <ul>
-            <li><a href="#dashboard"><span className="sidebar-icon">{icons.dashboard}</span></a></li>
-            <li><a href="#students"><span className="sidebar-icon">{icons.students}</span></a></li>
-            <li><a href="#teachers"><span className="sidebar-icon">{icons.teachers}</span></a></li>
-            <li><a href="#classes"><span className="sidebar-icon">{icons.classes}</span></a></li>
+            <li><a href="/dashboard" onClick={e => handleNav(e, "/dashboard")}>
+                <span className="sidebar-icon">{icons.dashboard}</span>
+
+              </a></li>
+            <li><a href="/students" onClick={e => handleNav(e, "/students")}>
+                <span className="sidebar-icon">{icons.students}</span>
+
+              </a></li>
+            <li><a href="/teachers" onClick={e => handleNav(e, "/teachers")}>
+                <span className="sidebar-icon">{icons.teachers}</span>
+                
+              </a></li>
+            {/*<li><a href="#classes"><span className="sidebar-icon">{icons.classes}</span> <span className="sidebar-text enlarged">Classes</span></a></li>*/}
             <li>
               <a href="/applications" onClick={e => handleNav(e, "/applications")}>
                 <span className="sidebar-icon">{icons.applications}</span>
+                
               </a>
             </li>
-            <li><a href="#settings"><span className="sidebar-icon">{icons.settings}</span></a></li>
+            <li><a href="/settings" onClick={e => handleNav(e, "/settings")}>
+                <span className="sidebar-icon">{icons.settings}</span>
+                
+              </a></li>
           </ul>
         </nav>
       )}
