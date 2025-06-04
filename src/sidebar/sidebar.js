@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import { useNavigate } from "react-router-dom";
 import './../styles/sidebar.css'; 
 
@@ -12,8 +12,7 @@ const icons = {
   applications: <span role="img" aria-label="Applications">🗂️</span>,
 };
 
-const Sidebar = () => {
-  const [collapsed, setCollapsed] = useState(false);
+const Sidebar = ({ collapsed, setCollapsed }) => {
   const navigate = useNavigate();
 
   const handleNav = (e, path) => {

@@ -1,0 +1,50 @@
+.toolbar-banner {
+  height: 56px;
+  background: #222e3c;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  position: fixed;
+  top: 0;
+  left: 220px; /* default sidebar width */
+  right: 0;
+  z-index: 200;
+  box-shadow: 0 2px 8px rgba(34,46,60,0.08);
+  transition: left 0.3s;
+}
+
+.toolbar-banner.collapsed {
+  left: 60px; /* collapsed sidebar width */
+}
+
+.toolbar-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.toolbar-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.toolbar-btn:hover {
+  background: #1b2230;
+}
+
+.home-btn {
+  margin-right: 12px;
+}
+
+.user-btn {
+  margin-left: 12px;
+}
