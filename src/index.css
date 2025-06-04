@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main-content {
+  transition: margin-left 0.3s;
+  margin-left: 220px; /* sidebar open */
+}
+
+.main-content.collapsed {
+  margin-left: 60px; /* sidebar collapsed */
+}
