@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 Find the application at https://endearing-entremet-2484a6.netlify.app/applications
+Auto-deploying every default branch change through netlify 
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
