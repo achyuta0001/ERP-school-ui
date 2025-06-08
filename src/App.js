@@ -9,13 +9,19 @@ import Students from "./pages/students";
 import Teachers from "./pages/teachers";
 import Settings from "./pages/settings";
 import Toolbar from "./toolbar/toolbar";
+import Login from "./logon-page/login";
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  if (!isAuthenticated) {
+    return <Login setIsAuthenticated={setIsAuthenticated} />;
+  }
 
   return (
     <BrowserRouter>
-      <Toolbar collapsed={collapsed} /> 
+      <Toolbar collapsed={collapsed} />
       <div className="App" style={{ display: "flex" }}>
         <Sidebar collapsed={collapsed} setCollapsed={setCollapsed} />
         <div className={`main-content${collapsed ? " collapsed" : ""}`} style={{ flex: 1, padding: "30px" }}>
