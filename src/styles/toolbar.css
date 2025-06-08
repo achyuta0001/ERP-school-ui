@@ -4,8 +4,6 @@
   color: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
   position: fixed;
   top: 0;
   left: 220px; /* default sidebar width */
@@ -13,38 +11,61 @@
   z-index: 200;
   box-shadow: 0 2px 8px rgba(34,46,60,0.08);
   transition: left 0.3s;
+  padding: 0;
 }
 
 .toolbar-banner.collapsed {
-  left: 60px; /* collapsed sidebar width */
+  left: 60px;
 }
 
-.toolbar-title {
-  font-size: 1.3rem;
+.toolbar-section.left,
+.toolbar-section.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.toolbar-section.right {
+  justify-content: flex-end;
+}
+
+.center-btn {
+  font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 1px;
   color: #fff;
-}
-
-.toolbar-btn {
   background: none;
   border: none;
-  color: #fff;
-  font-size: 1.5rem;
+  padding: 2px 10px;
+  border-radius: 4px;
+  height: 32px;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 50%;
   transition: background 0.2s;
+  margin: 0 auto;
 }
 
-.toolbar-btn:hover {
+.center-btn:hover {
   background: #1b2230;
 }
 
-.home-btn {
-  margin-right: 12px;
+.user-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s;
 }
 
-.user-btn {
-  margin-left: 12px;
+.user-btn:hover {
+  background: #1b2230;
 }
